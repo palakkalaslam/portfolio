@@ -40,7 +40,7 @@
   
 
  
-  // $contact->recaptcha_secret_key = '6LfQF9UkAAAAAAhOLdi1mR9GEA3XgwvUoa5NmweA';
+  
 //echo $contact->send();
  
  
