@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'palakkalaslam@gmail.com';
+  $receiving_email_address = '';
 
   // if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
   //   include( $php_email_form );
@@ -26,10 +26,10 @@
   // // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
   // $contact->smtp = array(
-  //   'host' => 'smtp.hostinger.com',
-  //   'username' => 'noreply@palakkalaslam.com',
-  //   'password' => 'AmAslam@123',
-  //   'port' => '465'
+  //   'host' => '',
+  //   'username' => '',
+  //   'password' => '',
+  //   'port' => ''
   // );
   
 
@@ -58,14 +58,14 @@
 	}
 
 	if($formok){
-		$headers = "From: palakkalaslam@gmail.com" . "\r\n";
+		$headers = "From: " . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$emailbody = "<p>You have recieved a new message from the enquiries form on your website.</p>
                   <p><strong>Name: </strong> {$name} </p>
                   <p><strong>Email Address: </strong> {$email} </p>
                   <p><strong>Message: </strong> {$message} </p> ";
 
-    mail("palakkalaslam@gmail.com","New Enquiry",$emailbody,$headers);
+    mail("mail id","New Enquiry",$emailbody,$headers);
 
    
 
